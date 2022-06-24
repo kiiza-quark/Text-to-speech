@@ -33,4 +33,10 @@ def exit():
 def reset():
     Msg.set("")
 
+##buttons
+
+Button(root, font='arial 20 bold', text = "SPEAK", command=speak, width='4').place(x=25,y=140)
+Button(root, font='arial 20 bold', text="EXIT", width='4', command=exit, bg='Orangered1').place(x=100,y='140')
+Button(root, font='arial 20 bold', text="RESET", width='4', command=reset).place(x=75,y=140)
+
 
