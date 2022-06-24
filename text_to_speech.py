@@ -27,3 +27,10 @@ def speak():
     speech.save('Kiiza\'s speaker.mp3')
     playsound('kiiza\'s speech.mp3')
 
+def exit():
+    root.destroy()
+
+def reset():
+    Msg.set("")
+
+
