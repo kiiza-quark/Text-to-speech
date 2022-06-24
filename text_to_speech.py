@@ -24,8 +24,8 @@ entry_field.place(x=20, y=100)
 def speak():
     Message = entry_field.get()
     speech = gTTS(text = Message)
-    speech.save('Kiiza\'s speaker.mp3')
-    playsound('kiiza\'s speech.mp3')
+    speech.save('audio.mp3')
+    playsound('audio.mp3')
 
 def exit():
     root.destroy()
@@ -35,8 +35,8 @@ def reset():
 
 ##buttons
 
-Button(root, font='arial 20 bold', text = "SPEAK", command=speak, width='4').place(x=25,y=140)
-Button(root, font='arial 20 bold', text="EXIT", width='4', command=exit, bg='Orangered1').place(x=100,y='140')
-Button(root, font='arial 20 bold', text="RESET", width='4', command=reset).place(x=75,y=140)
+Button(root, font='arial 16 bold', text = "SPEAK", command=speak, width='10').place(x=10,y=140)
+Button(root, font='arial 16 bold', text="EXIT", width='4', command=exit, bg='Orangered1').place(x=145,y=140)
+Button(root, font='arial 16 bold', text="RESET", width='10', command=reset).place(x=205,y=140)
 
 root.mainloop()
