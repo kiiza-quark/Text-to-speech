@@ -17,4 +17,6 @@ Label(text="Kiiza quark", font='arial 22 bold', bg='pink', width='20').pack(side
 Msg = StringVar()
 Label(root, text="Enter what i should speak", font = 'arial 15 bold', bg='white smoke').place(x=20,y=60)
 
+entry_field = Entry(root, textvariable=Msg, width='50')
+entry_field.place(x=20, y=100)
 
