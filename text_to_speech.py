@@ -20,3 +20,10 @@ Label(root, text="Enter what i should speak", font = 'arial 15 bold', bg='white 
 entry_field = Entry(root, textvariable=Msg, width='50')
 entry_field.place(x=20, y=100)
 
+#function that does the real conversion
+def speak():
+    Message = entry_field.get()
+    speech = gTTS(text = Message)
+    speech.save('Kiiza\'s speaker.mp3')
+    playsound('kiiza\'s speech.mp3')
+
